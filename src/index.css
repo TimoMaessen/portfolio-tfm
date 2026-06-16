@@ -1,13 +1,131 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
+/* 1. GLOBALE DESIGN TOKENS */
+:root {
+  --bg-beige: #f7f4eb;
+  --bg-dots: #cbd1d4;
+  --accent-orange: #df5520;
+  --blue-accent: #44B4D9;
+  --text-dark: #000000;
+  --text-muted: #5a5a5a;
+  --max-width-canvas: 1728px;
+  /* MacBook Pro 16" Target Canvas */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* RESET & BASE CANVAS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-beige);
+  background-image: radial-gradient(#e0dacb 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  /* Figma Jamboard stippen */
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 2. EXACTE FIGMA TYPOGRAFIE SCHAAL (Geldt voor de hele site) */
+h1,
+.h1-style {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+h2,
+.h2-style {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+h3,
+.h3-style {
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--blue-accent);
+  margin-bottom: 5px;
+}
+
+p,
+.p-style {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+/* SPECIAL UTILITY TEXT CLASSES */
+.p-blue {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue-accent);
+  display: inline;
+}
+
+.p-blue-alt {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--blue-accent);
+  display: inline;
+}
+
+.p-it-blue {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue-accent);
+  font-style: italic;
+  display: inline;
+}
+
+/* GLOBAL STRUCTURAL SKELETONS */
+.canvas-wrapper {
+  width: 100%;
+  max-width: var(--max-width-canvas);
+  margin: 0 auto;
+  padding-top: 85px;
+}
+
+.standard-section {
+  padding: 80px 8%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* src/index.css - VOEG DEZE TOE ONDER JE TYPOGRAFIE SCHAAL */
+.h1-white {
+  font-size: 20px;
+  font-weight: 900;
+  color: #ffffff !important;
+}
+
+.h2-white {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.h3-white {
+  font-size: 10px;
+  font-weight: 300;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.p-white {
+  font-size: 12px;
+  font-weight: 300;
+  color: #ffffff !important;
+  line-height: 1.5;
 }

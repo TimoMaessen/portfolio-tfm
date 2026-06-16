@@ -1,0 +1,88 @@
+/* src/components/PIV.css */
+
+.piv-bg-wrapper {
+    background-color: #FAEADD;
+    background-image: radial-gradient(#e7d5c4 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.piv-container {
+    width: 100%;
+    max-width: 950px;
+    /* De totale breedteas blijft 950px */
+    /* padding: 0 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    /* Ruimte tussen de asymmetrische blokken */
+}
+
+/* ASYMMETRISCHE RIJEN */
+.piv-row-left-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.piv-row-right-content {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Flipped de layout: logo's links, tekst rechts */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* TEKSTBLOKKEN HARD GELIMITEERD OP 550PX */
+.piv-text-block-550 {
+    width: 100%;
+    max-width: 550px;
+}
+
+blockquote.piv-blockquote {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--text-dark);
+    border-left: 1px solid var(--blue-accent);
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+/* SIDE LOGO COOLDOWN GRIDS */
+.piv-side-logo-grid {
+    display: flex;
+    flex-direction: column;
+    /* Plakt de twee logo's onder elkaar */
+    gap: 70px;
+    width: 340px;
+    /* Resterende witruimte binnen de 950px as */
+    align-items: center;
+}
+
+.piv-logo-container {
+    width: 100%;
+    /* max-width: 340px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piv-logo-container img {
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}

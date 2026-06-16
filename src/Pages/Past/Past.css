@@ -1,0 +1,122 @@
+/* src/components/Past.css */
+
+/* HOOFD-WRAPPER DIE DE PAGINA RECENTREERT */
+.past-section-wrapper {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* DE CENTRALE 950PX GRID-AS */
+.past-main-container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    /* Ruimte tussen de opeenvolgende projecten */
+    position: relative;
+    /* Vormt het ankerpunt voor de absolute titel aan de linkerkant */
+}
+
+/* DE UITGEBROKEN TITEL (ZWEEFT LINKS VAN DE 950PX KOLOM) */
+.past-header-block {
+    position: absolute;
+    right: 100%;
+    /* Duwt de titel volledig buiten de linkerrand van de container */
+    margin-right: 40px;
+    /* Exact 20px afstand tot de tekstkolom */
+    top: 0;
+    /* Bovenkant lijnt mathematisch uit met de eerste tekstregel */
+    width: auto;
+    display: flex;
+}
+
+.past-title-img {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* FLEXBOX TIMELINE RIJEN (ALLES STRIKT UITGELIJD OP DE BOVENKANT) */
+.past-timeline-row-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Zorgt dat tekst en afbeeldingen strak aan de top uitlijnen */
+    width: 100%;
+}
+
+.past-timeline-row-right {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Draait de volgorde om: afbeelding links, tekst rechts */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* TEKSTKOLOMMEN HARD GELIMITEERD OP 550PX */
+.past-text-housing-550 {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* EXPERTISE AREAS FULL-WIDTH BLOK (SPANT DE VOLLEDIGE 950PX) */
+.past-full-width-text-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* SUBSECTIES BINNEN HET MASTER-TRAJECT */
+.past-master-sub-node {
+    margin-top: 35px;
+    border-left: 1px solid var(--blue-accent);
+    padding-left: 18px;
+}
+
+.past-master-sub-node h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+/* RECHTER-/LINKERKOLOM VOOR DE AFBEELDINGEN (320PX) */
+.past-graphic-container-wrapper {
+    width: 320px;
+    /* Past perfect binnen de resterende marge van het 950px grid */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.past-project-fluid-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* Behoudt de originele ratio van je png's */
+    border-radius: 12px;
+}
+
+/* ONDERSTE DIAGRAM SECTIE (EXPERTISE AREAS OVERVIEW) */
+.past-bottom-schematic-block {
+    width: 100%;
+    margin-top: -30px;
+    /* Trekt de diagram-png strakker aan tegen de bovenliggende tekst */
+    display: flex;
+    justify-content: center;
+}
+
+.past-eas-full-width-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+}

@@ -1,0 +1,129 @@
+/* src/components/Present.css */
+
+.present-section-wrapper {
+    width: 100%;
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.present-main-container {
+    width: 100%;
+    max-width: 950px;
+    /* Exact uitgelijnd op de centrale 950px as */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    position: relative;
+    margin-bottom: 38px;
+    /* Vormt de basis voor de absolute uitbreek-titel */
+}
+
+/* OUT-OF-BOUNDS BREAKOUT TITEL (LINKS VAN DE 950PX KOLOM) */
+.present-header-block {
+    position: absolute;
+    right: 100%;
+    /* Duwt het element volledig naar de linker-marge */
+    margin-right: 40px;
+    /* Gecorrigeerd naar exact 40px tussenruimte */
+    top: 0;
+    /* Perfect uitgelijnd met de top van de eerste h3 tekst */
+    width: auto;
+    display: flex;
+}
+
+.present-title-img {
+    height: 90px;
+    /* Gecorrigeerd naar jouw harde 90px hoogte */
+    width: auto;
+    object-fit: contain;
+}
+
+/* TIMELINE FLEXBOX STRUCTURERS WITH ALTERNATING HOUSING */
+.present-row-left-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.present-row-right-content {
+    display: flex;
+    flex-direction: row-reverse;
+    /* Draait de layout om: Visual links, tekst rechts */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* TEKSTBLOKKEN HARD LIMIT OP 550PX */
+.present-text-housing-550 {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* EXPERTISE AREA SUB-NODES */
+.present-expertise-sub-node {
+    margin-top: 45px;
+    border-left: 1px solid var(--blue-accent);
+    padding-left: 18px;
+}
+
+.present-expertise-sub-node h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+/* VISUAL GRAPHIC PLACEHOLDERS (320PX WIDE) */
+.present-graphic-container-wrapper {
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.present-project-fluid-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 1px;
+}
+
+/* EXPERTISE SUMMARY ACCENT TEXT BLOCK (SPANS FULL 950PX) */
+.present-summary-full-width-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin-top: 20px; */
+}
+
+/* CONTEST TROPHY PARTNER MATRIX ONDERAAN (FULL 950PX) */
+.present-contest-gallery-flex {
+    /* margin-top: 20px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.present-contest-logo-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.present-contest-img-fluid {
+    width: 100%;
+    height: auto;
+    /* max-height: 80px; */
+    /* Voorkomt dat de awards ongelijk ogen */
+    object-fit: contain;
+    border-radius: 1px;
+}

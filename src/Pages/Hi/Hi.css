@@ -1,0 +1,139 @@
+/* src/components/Hi.css */
+
+/* HOOFDRIJ: INTRODUCTIE */
+.hi-flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    max-width: 950px;
+    /* Begrensd op jouw as */
+    margin: 0 auto;
+}
+
+.profile-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.headline-content-container {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* 40px Gecorrigeerde Regular Title */
+h1.hi-main-title {
+    font-size: 40px;
+    font-weight: 400 !important;
+    color: var(--text-dark);
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+}
+
+.action-btn-img {
+    height: 48px;
+    width: auto;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: transform 0.2s ease;
+    display: block;
+}
+
+.action-btn-img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ================= NIEUW GEOPTIMALISEERD PASVORM-SYSTEEM ONDERAAN ================= */
+
+
+/* ================= GEOPTIMALISEERD PASVORM-SYSTEEM ONDERAAN ================= */
+
+.hi-bottom-graphic-container {
+    position: relative;
+    /* Cruciaal om het witte kaartje absoluut binnen dit frame te houden */
+
+    /* VERANDERD: De negatieve bottom margin (-100px) duwt de afbeelding over de volgende sectie heen */
+    margin: 200px auto -200px auto;
+
+    width: 100%;
+    max-width: 950px;
+    /* Lijnrecht gecentreerd onder de bovenste rij */
+    display: block;
+
+    /* CRUCIAL: Zorgt ervoor dat de trap bovenop de achtergrond van de volgende sectie stackt */
+    z-index: 2;
+}
+
+.hi-bottom-group-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* HET WITTE STICKER-KAARTJE (ZWEEFT RECHTSONDER OVER JE RENDERS HEEN) */
+.hi-image-text-overlay-card {
+    position: absolute;
+    bottom: 30px;
+    /* Schuif hiermee om de verticale positie te veranderen */
+    right: 160px;
+    /* Schuif hiermee om de horizontale overlap te finetunen */
+    width: 230px;
+    /* Compacte breedte conform je screenshot */
+
+    background-color: #ffffff;
+    padding: 15px;
+    /* border-radius: 8px; */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    /* Geeft diepte over de renders heen */
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    text-align: left;
+}
+
+/* SPECIFIEKE TYPOGRAFIE VOOR BINNEN HET KAARTJE */
+.hi-image-text-overlay-card .hi-card-h3 {
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+    /* font-size: 10px; */
+    /* font-weight: 700; */
+    /* color: #8a8a8a; */
+    /* text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 4px 0 !important;
+    padding: 0;
+    line-height: 1.1; */
+}
+
+.hi-image-text-overlay-card .hi-card-h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0 0 8px 0 !important;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.hi-image-text-overlay-card .hi-card-p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #4a4a4a;
+    line-height: 1.45;
+    margin: 0 !important;
+    padding: 0;
+}

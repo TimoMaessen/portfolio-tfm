@@ -1,0 +1,38 @@
+/* App.module.css */
+.canvas {
+    background-color: #f7f4eb;
+    /* Warme, rustige beige achtergrond */
+    background-image: radial-gradient(#ffffff 1.2px, transparent 1.2px);
+    /* Iets kleiner en veel zachter van kleur */
+    background-size: 24px 24px;
+    /* Grid verkleind van 28px naar 24px voor een subtiel hogere dichtheid */
+    min-height: 100vh;
+    color: #1a1a1a;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* De soepele slide-up animatie voor content */
+.slideUpSection {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    padding: 100px 10%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@keyframes slideUpFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}

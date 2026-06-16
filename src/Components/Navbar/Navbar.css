@@ -1,0 +1,81 @@
+/* src/components/Navbar.css */
+
+.navbar-fixed-header-container {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    justify-content: flex-end;
+    /* Netjes rechts uitgelijnd aan de 950px as */
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.navbar-inner-550 {
+    width: 550px;
+    height: 80px;
+    /* Iets compacter */
+    position: relative;
+    display: flex;
+    align-items: center;
+    pointer-events: auto;
+
+    /* DE STICKER LOOK */
+    background: #f7f4eb;
+    /* Exact dezelfde beige kleur als je canvas */
+    border: 1px solid var(--blue-accent, #44B4D9);
+    border-radius: 16px;
+    /* Een harde, handgetekende schaduw-vibe in plaats van een zachte blur */
+    box-shadow: 2px 2px 0px var(--blue-accent, #44B4D9);
+    padding: 0 10px;
+}
+
+.navbar-scribble-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Verandert de kleur direct en organisch mee tijdens de transitie */
+.navbar-scribble-path {
+    transition: stroke 0.3s cubic-bezier(0.16, 1, 0.3, 1), stroke-dashoffset 0s !important;
+}
+
+.navbar-links-layer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    z-index: 5;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+    cursor: pointer;
+    padding: 6px 4px;
+    transition: color 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s ease;
+}
+
+/* Subtiele feedback wanneer een link geselecteerd is */
+.nav-item.is-active {
+    transform: scale(1.05);
+}
+
+.nav-item:hover {
+    color: var(--blue-accent, #44B4D9) !important;
+    transform: scale(1.05);
+}

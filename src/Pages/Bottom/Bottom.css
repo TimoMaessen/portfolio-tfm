@@ -1,0 +1,106 @@
+/* src/components/Bottom.css */
+
+.bottom-section-wrapper {
+    background-color: var(--blue-accent, #44B4D9);
+    /* Je herkenbare helderblauwe kleur */
+    background-image: radial-gradient(#8fcde1 1.2px, transparent 1.2px);
+    /* Exact dezelfde subtiele stippen */
+    background-size: 24px 24px;
+    /* Exact dezelfde hogere dichtheid als je canvas */
+
+    /* Laat de blauwe balk over de volledige schermbreedte uitbreken */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 130px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-main-container {
+    width: 100%;
+    max-width: 850px;
+    /* Rigide 700px breedteas */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    /* Terug naar rij-indeling: Tekst links, beeld rechts */
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* LINKERKOLOM: INTERN VOLLEDIG GECENTREERD */
+.bottom-text-housing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centreert de h1, p en social row onder elkaar */
+    text-align: center;
+    /* Centreert de tekstregels zelf */
+    flex: 1;
+}
+
+.bottom-text-housing h1 {
+    /* font-size: 32px;
+    font-weight: 800; */
+    color: #ffffff !important;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.bottom-text-housing p.p-white-bottom {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95) !important;
+    line-height: 1.6;
+    margin: 12px 0 0 0;
+}
+
+/* SOCIAL MEDIA LINKS BAR DIRECT ONDER DE TEKST */
+.bottom-social-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* Afstand onder de paragraaf */
+}
+
+.bottom-social-icon {
+    color: #ffffff;
+    display: inline-flex;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
+}
+
+.bottom-social-icon:hover {
+    transform: translateY(-4px) scale(1.1);
+    color: var(--text-dark, #1a1a1a);
+}
+
+.bottom-social-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+}
+
+/* RECHTERKOLOM: AFBEELDING ALTIJD RECHTS APART */
+.bottom-visual-wrapper {
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    /* Lijnt de foto strak aan de rechterkant van de 700px as */
+}
+
+.bottom-main-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}

@@ -1,0 +1,67 @@
+/* src/components/Future.css */
+
+.future-section-wrapper {
+    width: 100%;
+    padding: 120px 0 160px 0;
+    /* Iets meer bottom-padding voor de afsluiting */
+    display: flex;
+    justify-content: center;
+}
+
+.future-main-container {
+    width: 100%;
+    max-width: 950px;
+    /* Centrale 950px as */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* Basis voor de absolute titel links */
+}
+
+/* OUT-OF-BOUNDS TITEL (LINKS VAN DE 950PX KOLOM) */
+.future-header-block {
+    position: absolute;
+    right: 100%;
+    margin-right: 40px;
+    /* Exact 40px tussenruimte zoals bij Present */
+    top: 0;
+    width: auto;
+    display: flex;
+}
+
+.future-title-img {
+    height: 90px;
+    /* Harde 90px hoogte */
+    width: auto;
+    object-fit: contain;
+}
+
+/* FLEXBOX LAYOUT VOOR TEKST EN FOTO */
+.future-content-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* TEKSTBLOK BEGRENSD OP 550PX */
+.future-text-housing-550 {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* AFBEELDING AAN DE RECHTERKANT (350PX) */
+.future-visual-wrapper {
+    width: 350px;
+    /* Iets breder voor de foto */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.future-main-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 1px;
+}

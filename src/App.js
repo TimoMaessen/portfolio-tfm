@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.jsx
+import React from 'react';
+import './index.css';
+import Navbar from './Components/Navbar/Navbar';
+import Hi from './Pages/Hi/Hi';
+import PIV from './Pages/PIV/PIV';
+import Past from './Pages/Past/Past';
+import Present from './Pages/Present/Present';
+import Showcase from './Pages/Showcase/Showcase';
+import Future from './Pages/Future/Future';
+import Bottom from './Pages/Bottom/Bottom';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="canvas-wrapper">
+      <Navbar />
+      <Hi />
+      <PIV />
+      <Past />
+      <Present />
+      <Showcase />
+      <Future />
+      <Bottom />
     </div>
   );
 }
-
-export default App;
