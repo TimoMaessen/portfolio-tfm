@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TimoMaessen/portfolio-tfm/static/css/main.8ecb59e8.css",
+    "main.js": "/TimoMaessen/portfolio-tfm/static/js/main.29d2aea3.js",
+    "static/js/453.52754d75.chunk.js": "/TimoMaessen/portfolio-tfm/static/js/453.52754d75.chunk.js",
+    "index.html": "/TimoMaessen/portfolio-tfm/index.html",
+    "main.8ecb59e8.css.map": "/TimoMaessen/portfolio-tfm/static/css/main.8ecb59e8.css.map",
+    "main.29d2aea3.js.map": "/TimoMaessen/portfolio-tfm/static/js/main.29d2aea3.js.map",
+    "453.52754d75.chunk.js.map": "/TimoMaessen/portfolio-tfm/static/js/453.52754d75.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ecb59e8.css",
+    "static/js/main.29d2aea3.js"
+  ]
+}
